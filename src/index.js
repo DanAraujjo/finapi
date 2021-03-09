@@ -34,8 +34,6 @@ function getBalance(statement) {
   return balance;
 }
 
-app.use(express.json());
-
 app.post('/account', (request, response) => {
   const { name, cpf } = request.body;  
 
